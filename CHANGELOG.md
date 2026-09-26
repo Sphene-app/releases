@@ -1,3 +1,13 @@
+# Sphene v1.1.0 — Native Mermaid Diagrams & KaTeX Math Typesetting (2026-09-17)
+
+### Rich Technical Diagrams & Mathematics
+* **Native Mermaid Rendering**: Flowcharts, sequence diagrams, state diagrams, and entity-relationship diagrams rendered directly in preview.
+* **KaTeX Mathematics**: Full LaTeX math formula typesetting for inline `$formula$` and block `$$formula$$` equations.
+* **Interactive Markdown Tables**: Column alignment, visual sorting, and automated cell formatting.
+* **HTML Sanitization Pipeline**: Strict DOMPurify sanitization preventing script injection in rendered output.
+
+---
+
 # Sphene v1.0.0 — Native Model Context Protocol (MCP) Architecture (2026-09-15)
 
 ### Model Context Protocol (MCP) Server Architecture
