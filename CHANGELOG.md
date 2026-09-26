@@ -1,3 +1,13 @@
+# Sphene Kernel v2.2.12 — Cloud Auto-Sync Reconciliation & Network Listeners (2026-09-25)
+
+### Cloud Auto-Sync Reconciliation & Stability
+* **Full Vault Auto-Reconciliation**: Eliminated offline badge desync; automatic verification of remote and local file IDs.
+* **Real-Time Save/Delete Sync Hooks**: Real-time cloud push triggered automatically on every note save and deletion.
+* **Network Reconnection Flush**: Automatic synchronization flush upon `window.online` network recovery.
+* **OAuth Session Isolation**: Completely isolated session tokens between Google Drive, Dropbox, and peer relays.
+
+---
+
 # Sphene Kernel v2.2.0 — Sovereign Cloud Sync with Google Drive & Dropbox (2026-09-24)
 
 ### Sovereign Cloud Sync & Zero-Knowledge Relay
