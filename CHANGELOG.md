@@ -1,3 +1,13 @@
+# Sphene Kernel v2.2.24 — WebRTC P2P Mesh Sync & Partition Tabs (2026-09-25)
+
+### WebRTC P2P Mesh Sync & Teams Collaboration
+* **WebRTC Peer-to-Peer Mesh Sync**: Direct device-to-device note synchronization over encrypted data channels without third-party servers.
+* **1-Click QR Pairing**: Instant cryptographic pairing between desktop and mobile devices via ephemeral QR codes.
+* **UI Partition Tabs & Sticky Bottom Actions**: Ergonomic mobile navigation with persistent partition switcher and bottom action bar.
+* **Aegis Enclave v3.2 Armoring**: Feistel cipher byte-scrambled distribution ensuring zero readable client-side source exposure.
+
+---
+
 # Sphene Kernel v2.2.12 — Cloud Auto-Sync Reconciliation & Network Listeners (2026-09-25)
 
 ### Cloud Auto-Sync Reconciliation & Stability
