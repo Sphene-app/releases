@@ -1,3 +1,13 @@
+# Sphene v0.6.0 — Word Counter, Typewriter Scrolling & Typography Polish (2026-08-18)
+
+### Core Utilities & Editor Ergonomics
+* **Live Metrics HUD**: Real-time word count, character count, and estimated reading time meters in the editor footer.
+* **Typewriter Scrolling**: Keeps the active cursor line vertically centered for ergonomic long-form writing.
+* **Typography Engine**: Native Google Fonts loading (Inter, JetBrains Mono, Outfit) with custom line-height and letter-spacing options.
+* **Focus Mode**: Dimming of inactive paragraphs to highlight the active sentence.
+
+---
+
 # Sphene v0.5.0 — Sovereign Knowledge Graph & Tag Taxonomy (2026-08-05)
 
 ### Sovereign Knowledge Graph
