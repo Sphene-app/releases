@@ -1,3 +1,13 @@
+# Sphene v0.3.0 — Dynamic Plugin Architecture & Extension Slots (2026-07-08)
+
+### Dynamic Extensibility Engine
+* **Inversion-of-Control Plugin Architecture**: Modular extension points for custom renderers, sidebars, and commands.
+* **Safe Runtime Sandbox**: Zero-eval plugin execution context preventing script injection and vault corruption.
+* **Hot-Reload Capabilities**: Instant dynamic activation and deactivation of plugins without restarting the host.
+* **Lifecycle Hooks**: Complete hook events for note loading, saving, rendering, and indexing.
+
+---
+
 # Sphene v0.2.0 — Agent Integration & Sandboxed Scratchpads (2026-06-25)
 
 ### Agent Integration Foundation
