@@ -1,3 +1,13 @@
+# Sphene v0.8.0 — Interactive Checklists & Frontmatter Metadata (2026-09-05)
+
+### Interactive Checklists & Frontmatter
+* **Interactive Task Checklists**: Clickable `- [ ]` and `- [x]` checkboxes that update markdown files atomically in-place without opening the editor.
+* **YAML Frontmatter Parser**: Visual property chips for tags, dates, author, and status defined in document YAML headers.
+* **Template Generator**: Configurable boilerplate templates for meeting notes, research papers, and project plans.
+* **Smart Daily Notes**: Instant shortcut to today's daily log with automatic backlink injection.
+
+---
+
 # Sphene v0.7.0 — Dynamic Crystals Theme Engine & Command Palette (2026-08-28)
 
 ### Dynamic Crystals Theming
