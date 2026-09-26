@@ -1,3 +1,13 @@
+# Sphene v1.0.0 — Native Model Context Protocol (MCP) Architecture (2026-09-15)
+
+### Model Context Protocol (MCP) Server Architecture
+* **Native MCP Server**: Replaced ad-hoc scripts with standardized JSON-RPC 2.0 Model Context Protocol interface.
+* **Comprehensive Tool Surface**: Vault search, note read/write, differential timeline, and knowledge graph tools for AI agents.
+* **Zero-Source-Leakage Security Boundary**: Full read-only guardrails and staged proposal workflows protecting human vaults from unprompted overwrite.
+* **Universal Client Compatibility**: Plug-and-play interoperability with Claude Code, Cursor, Hermes Agent, OpenClaw, and Gemini CLI.
+
+---
+
 # Sphene v0.9.0 — Vault Migration Toolkit & Media Transclusion (2026-09-12)
 
 ### Migration & Media Engine
