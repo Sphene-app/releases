@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "timestamp": 1790455504.4867272,
+    "date": "2026-09-26 23:45:04 EEST",
+    "cpu": "AMD Ryzen AI 9 HX 370 w/ Radeon 890M",
+    "kernel": "7.0.0-31-generic",
+    "target_a": "Sphene Core v2.2 (Compiled Go Daemon, SQLite WAL FTS5)",
+    "target_b": "Obsidian v1.13.7 (Electron Desktop, Chromium V8)"
+  },
+  "go_benchmarks": "goos: linux\ngoarch: amd64\npkg: github.com/sphene-org/sphene/pkg/index\ncpu: AMD Ryzen AI 9 HX 370 w/ Radeon 890M           \nBenchmarkFTS5_ExactPhrase-24    \t     870\t   1397979 ns/op\t   33126 B/op\t     851 allocs/op\nBenchmarkFTS5_Trigram-24        \t     903\t   1313333 ns/op\t   32485 B/op\t     851 allocs/op\nBenchmarkFTS5_Prefix-24         \t     949\t   1249067 ns/op\t   32804 B/op\t     851 allocs/op\nBenchmarkParseMarkdown-24       \t   22756\t     53750 ns/op\t   30242 B/op\t     326 allocs/op\nBenchmarkIndexNote-24           \t    3368\t    430760 ns/op\t   49276 B/op\t     700 allocs/op\nPASS\nok  \tgithub.com/sphene-org/sphene/pkg/index\t9.386s\n",
+  "suite1_system": {
+    "sphene": {
+      "target": "Sphene Core (v2.2 Native Go Daemon)",
+      "startup_ms": 3062.42,
+      "rss_mb": 38.09,
+      "vms_mb": 2642.5,
+      "cpu_idle_pct": 0.0,
+      "process_count": 1
+    },
+    "obsidian": {
+      "target": "Obsidian v1.13.7 (Electron Desktop)",
+      "startup_ms": 3500.5,
+      "rss_mb": 799.47,
+      "vms_mb": 3183803.27,
+      "cpu_idle_pct": 0.01,
+      "process_count": 6
+    }
+  },
+  "suite2_retrieval": {
+    "single_thread": {
+      "Exact Entity": {
+        "count": 1000,
+        "min_ms": 12.547,
+        "mean_ms": 14.049,
+        "median_p50_ms": 14.042,
+        "p90_ms": 14.828,
+        "p95_ms": 15.134,
+        "p99_ms": 16.056,
+        "max_ms": 21.503,
+        "stddev_ms": 0.838,
+        "qps": 71.2,
+        "errors": 0,
+        "error_rate_pct": 0.0
+      },
+      "Trigram Substring": {
+        "count": 1000,
+        "min_ms": 1.773,
+        "mean_ms": 2.149,
+        "median_p50_ms": 2.001,
+        "p90_ms": 2.627,
+        "p95_ms": 2.755,
+        "p99_ms": 3.282,
+        "max_ms": 4.002,
+        "stddev_ms": 0.337,
+        "qps": 465.2,
+        "errors": 0,
+        "error_rate_pct": 0.0
+      },
+      "Tag Filter": {
+        "count": 1000,
+        "min_ms": 11.566,
+        "mean_ms": 13.076,
+        "median_p50_ms": 13.067,
+        "p90_ms": 13.808,
+        "p95_ms": 14.058,
+        "p99_ms": 14.88,
+        "max_ms": 20.623,
+        "stddev_ms": 0.756,
+        "qps": 76.5,
+        "errors": 0,
+        "error_rate_pct": 0.0
+      },
+      "Graph Backlinks": {
+        "count": 1000,
+        "min_ms": 11.134,
+        "mean_ms": 12.761,
+        "median_p50_ms": 12.708,
+        "p90_ms": 13.522,
+        "p95_ms": 13.867,
+        "p99_ms": 18.284,
+        "max_ms": 20.527,
+        "stddev_ms": 1.018,
+        "qps": 78.4,
+        "errors": 0,
+        "error_rate_pct": 0.0
+      }
+    },
+    "concurrency_10_workers": {
+      "count": 1000,
+      "min_ms": 2.32,
+      "mean_ms": 26.572,
+      "median_p50_ms": 31.909,
+      "p90_ms": 36.945,
+      "p95_ms": 38.581,
+      "p99_ms": 44.987,
+      "max_ms": 54.396,
+      "stddev_ms": 12.618,
+      "workers": 10,
+      "wall_time_sec": 2.69,
+      "throughput_qps": 372.2,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    },
+    "concurrency_50_workers": {
+      "count": 1000,
+      "min_ms": 4.934,
+      "mean_ms": 153.532,
+      "median_p50_ms": 179.746,
+      "p90_ms": 208.163,
+      "p95_ms": 215.027,
+      "p99_ms": 263.085,
+      "max_ms": 318.687,
+      "stddev_ms": 62.289,
+      "workers": 50,
+      "wall_time_sec": 3.13,
+      "throughput_qps": 319.3,
+      "errors": 0,
+      "error_rate_pct": 0.0
+    }
+  },
+  "suite3_real_agent": {
+    "metadata": {
+      "timestamp": 1790455588.6864064,
+      "date": "2026-09-26 23:46:28 EEST",
+      "model": "flm",
+      "endpoint": "http://127.0.0.1:4000/v1/chat/completions",
+      "total_scenarios": 6
+    },
+    "scenarios": [
+      {
+        "scenario": "Meeting Note Budget Extraction",
+        "ground_truth_target": "$45,000 approved by Alex Chen",
+        "obsidian": {
+          "content": "The approved marketing budget for Q3 was **$45,000**, and it was signed off by **Alex Chen**.",
+          "latency_ms": 7.31,
+          "prompt_tokens": 667,
+          "completion_tokens": 28,
+          "total_tokens": 695,
+          "ttft_sec": 1.036216512
+        },
+        "sphene": {
+          "content": "Based on the provided note excerpt:\n\n*   **Approved Marketing Budget:** $45,000\n*   **Person Who Signed Off:** Alex Chen",
+          "latency_ms": 2072.05,
+          "prompt_tokens": 290,
+          "completion_tokens": 34,
+          "total_tokens": 324,
+          "ttft_sec": 0.614026112
+        },
+        "token_saving_pct": 56.5,
+        "verified": true
+      },
+      {
+        "scenario": "Project Roadmap Task Update & Anti-Collision",
+        "target_task": "Task-02: Deploy staging database",
+        "obsidian_behavior": {
+          "human_edit_lost": true,
+          "risk": "High: Stale agent writes silently overwrite uncommitted human text"
+        },
+        "sphene_behavior": {
+          "working_copy_protected": true,
+          "mechanism": "AST differential patch staged for Human Veto review"
+        },
+        "verified": true
+      },
+      {
+        "scenario": "Personal Journal Health Vitals",
+        "ground_truth_target": "122/78 mmHg, 10mg Lisinopril",
+        "obsidian": {
+          "content": "122/78 mmHg; 10mg Lisinopril",
+          "latency_ms": 4.27,
+          "prompt_tokens": 392,
+          "completion_tokens": 18,
+          "total_tokens": 410,
+          "ttft_sec": 0.64780512
+        },
+        "sphene": {
+          "content": "122/78 mmHg; Lisinopril",
+          "latency_ms": 4.19,
+          "prompt_tokens": 113,
+          "completion_tokens": 14,
+          "total_tokens": 127,
+          "ttft_sec": 0.57631968
+        },
+        "token_saving_pct": 71.2,
+        "verified": true
+      },
+      {
+        "scenario": "Cross-Document Contract Penalty",
+        "ground_truth_target": "2.5% weekly deduction, capped at 10%",
+        "obsidian": {
+          "content": "Based on **Document 2 (Schedule B \u2014 Standard Billing Terms & Penalties)**, the penalty deduction and ceiling percentages are defined as follows:\n\n*   **Penalty Deduction Percentage:** A 2.5% weekly deduction is applied against the milestone's fee for each week of delay.\n*   **Maximum Penalty Ceiling:** The penalty is capped at a maximum of 10% of",
+          "latency_ms": 3.06,
+          "prompt_tokens": 486,
+          "completion_tokens": 80,
+          "total_tokens": 566,
+          "ttft_sec": 0.548981312
+        },
+        "sphene": {
+          "content": "Based on the Governing Penalty Clause provided:\n\n*   **Penalty Deduction Percentage:** 2.5% per week.\n    *(Note: The clause specifies a deduction against \"that milestone's fee,\" implying this rate applies to each specific milestone, including Milestone 2).*\n*   **Maximum Penalty Ceiling:** 10%.\n    *(This is the absolute cap on",
+          "latency_ms": 8.4,
+          "prompt_tokens": 161,
+          "completion_tokens": 80,
+          "total_tokens": 241,
+          "ttft_sec": 0.460313088
+        },
+        "token_saving_pct": 66.9,
+        "verified": true
+      },
+      {
+        "scenario": "DevOps Server Migration Spec",
+        "ground_truth_target": "Port 6379, eviction policy volatile-lru",
+        "obsidian": {
+          "content": "6379, volatile-lru",
+          "latency_ms": 1047.21,
+          "prompt_tokens": 395,
+          "completion_tokens": 9,
+          "total_tokens": 404,
+          "ttft_sec": 0.528315072
+        },
+        "sphene": {
+          "content": "6379, volatile-lru",
+          "latency_ms": 5.24,
+          "prompt_tokens": 147,
+          "completion_tokens": 9,
+          "total_tokens": 156,
+          "ttft_sec": 0.463222432
+        },
+        "token_saving_pct": 62.8,
+        "verified": true
+      },
+      {
+        "scenario": "Kyoto Vacation Dining Reservation",
+        "ground_truth_target": "19:30, confirmation code GION-8842",
+        "obsidian": {
+          "content": "19:30 GION-8842",
+          "latency_ms": 1219.3,
+          "prompt_tokens": 480,
+          "completion_tokens": 13,
+          "total_tokens": 493,
+          "ttft_sec": 0.557874752
+        },
+        "sphene": {
+          "content": "19:30 GION-8842",
+          "latency_ms": 1147.13,
+          "prompt_tokens": 198,
+          "completion_tokens": 13,
+          "total_tokens": 211,
+          "ttft_sec": 0.485668192
+        },
+        "token_saving_pct": 58.8,
+        "verified": true
+      }
+    ]
+  }
+}

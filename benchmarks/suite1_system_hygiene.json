@@ -1,0 +1,18 @@
+{
+  "sphene": {
+    "target": "Sphene Core (v2.2 Native Go Daemon)",
+    "startup_ms": 3520.68,
+    "rss_mb": 45.79,
+    "vms_mb": 1272.87,
+    "cpu_idle_pct": 0.0,
+    "process_count": 1
+  },
+  "obsidian": {
+    "target": "Obsidian v1.13.7 (Electron Desktop)",
+    "startup_ms": 3500.56,
+    "rss_mb": 804.49,
+    "vms_mb": 3183769.28,
+    "cpu_idle_pct": 0.02,
+    "process_count": 6
+  }
+}

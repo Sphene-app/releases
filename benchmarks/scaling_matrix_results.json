@@ -1,0 +1,54 @@
+{
+  "1 Document": {
+    "indexing": {
+      "index_time_ms": 61.28,
+      "peak_rss_mb": 30.76,
+      "peak_cpu_pct": 99.4
+    },
+    "read_write": {
+      "disk_write_ms": 0.704,
+      "disk_read_ms": 0.024
+    }
+  },
+  "10 Documents": {
+    "indexing": {
+      "index_time_ms": 81.39,
+      "peak_rss_mb": 31.75,
+      "peak_cpu_pct": 198.7
+    },
+    "read_write": {
+      "disk_write_ms": 0.8,
+      "disk_read_ms": 0.022
+    }
+  },
+  "100 Documents": {
+    "indexing": {
+      "index_time_ms": 263.67,
+      "peak_rss_mb": 35.09,
+      "peak_cpu_pct": 198.8
+    },
+    "read_write": {
+      "disk_write_ms": 0.811,
+      "disk_read_ms": 0.022
+    },
+    "search": {
+      "grep_search_ms": 3.01,
+      "sphene_search_ms": 16.33
+    }
+  },
+  "1,000 Documents": {
+    "indexing": {
+      "index_time_ms": 2713.95,
+      "peak_rss_mb": 40.46,
+      "peak_cpu_pct": 198.8
+    },
+    "read_write": {
+      "disk_write_ms": 1.072,
+      "disk_read_ms": 0.022
+    },
+    "search": {
+      "grep_search_ms": 86.3,
+      "sphene_search_ms": 12.5
+    }
+  }
+}

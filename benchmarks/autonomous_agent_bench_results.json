@@ -1,0 +1,323 @@
+[
+  {
+    "scenario_id": 1,
+    "scenario_name": "Q3 Marketing Budget & Sign-Off",
+    "vault_total_notes": 1016,
+    "target_doc": "2026-09-15_Q3_Budget_Review.md",
+    "target_location": "Section 3 ('Approved Budget Allocations'): Marketing Approved Amount $45,000, Sign-Off Alex Chen",
+    "user_prompt": "Can you check what budget we approved for marketing in Q3 and who signed off on it?",
+    "tool_calls": [
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "marketing budget Q3 approval"
+        }
+      },
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "marketing budget"
+        }
+      },
+      {
+        "name": "sphene_read",
+        "args": {
+          "path": "2026-09-15_Q3_Budget_Review.md"
+        }
+      }
+    ],
+    "retrieved_data_sample": [
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "marketing budget Q3 approval"
+        },
+        "snippet": "{\"results\": [], \"message\": \"No matches found for 'marketing budget Q3 approval'\"}"
+      },
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "marketing budget"
+        },
+        "snippet": "{\"results\": [{\"path\": \"2026-09-15_Q3_Budget_Review.md\", \"title\": \"Q3 Executive Budget & Operations Review\", \"snippet\": \"...Audit | Elena Rostova |\\n\\n### Final Approved Resolution\\nThe marketing budge"
+      },
+      {
+        "tool": "sphene_read",
+        "args": {
+          "path": "2026-09-15_Q3_Budget_Review.md"
+        },
+        "snippet": "---\nid: meet_2026_09_15_budget\ntitle: \"Q3 Executive Budget & Operations Review\"\ndate: 2026-09-15\ntags: [meeting, budget, operations, finance, q3]\nauthor: \"Finance & Operations Committee\"\nstatus: \"appr"
+      }
+    ],
+    "final_answer": "Here's what I found in your vault:\n\n**Q3 Marketing Budget**\n- **Approved amount:** $45,000 (reduced from the requested $50,000)\n- **Purpose:** Digital Growth Campaign & Sponsorships\n- **Signed off by:** Alex Chen (VP Operations)\n- **Condition:** Performance metrics must be reviewed at the 30-day mark\n\nThis was approved during the Q3 Executive Budget & Operations Review meeting on September 15, 2026. The full details are documented in the note `2026-09-15_Q3_Budget_Review.md`.\n\nOne thing worth noting: the marketing request was trimmed by $5,000, so it may be worth tracking how the $45,000 actually performs against the original $50,000 plan. Let me know if you'd like me to pull anything else.",
+    "ground_truth_verified": true,
+    "verification_notes": "Found $45,000 and Alex Chen",
+    "tokens": {
+      "prompt_tokens": 3867,
+      "completion_tokens": 453,
+      "total_tokens": 4320
+    }
+  },
+  {
+    "scenario_id": 2,
+    "scenario_name": "Personal Health Vitals & Medication",
+    "vault_total_notes": 1016,
+    "target_doc": "2026-09-24_Daily_Log.md",
+    "target_location": "Section 'Evening Health Vitals': 122/78 mmHg, 10mg Lisinopril",
+    "user_prompt": "I need to take my evening medicine, what was my dose again and what was my evening blood pressure reading?",
+    "tool_calls": [
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "evening medicine dose blood pressure"
+        }
+      },
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "medicine dose"
+        }
+      },
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "blood pressure"
+        }
+      },
+      {
+        "name": "sphene_read",
+        "args": {
+          "path": "2026-09-24_Daily_Log.md"
+        }
+      }
+    ],
+    "retrieved_data_sample": [
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "evening medicine dose blood pressure"
+        },
+        "snippet": "{\"results\": [], \"message\": \"No matches found for 'evening medicine dose blood pressure'\"}"
+      },
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "medicine dose"
+        },
+        "snippet": "{\"results\": [], \"message\": \"No matches found for 'medicine dose'\"}"
+      },
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "blood pressure"
+        },
+        "snippet": "{\"results\": [{\"path\": \"2026-09-24_Daily_Log.md\", \"title\": \"Daily Journal & Health Tracking \\u2014 September 24, 2026\", \"snippet\": \"...and quinoa.\\n- **Vitals Reading (9:30 PM):**\\n  - **Blood Pressure"
+      },
+      {
+        "tool": "sphene_read",
+        "args": {
+          "path": "2026-09-24_Daily_Log.md"
+        },
+        "snippet": "---\nid: journal_2026_09_24\ntitle: \"Daily Journal & Health Tracking \u2014 September 24, 2026\"\ndate: 2026-09-24\ntags: [journal, personal, health, habits]\nauthor: \"Personal\"\n---\n\n# Daily Journal & Health Tra"
+      }
+    ],
+    "final_answer": "---\nid: journal_2026_09_24\ntitle: \"Daily Journal & Health Tracking \u2014 September 24, 2026\"\ndate: 2026-09-24\ntags: [journal, personal, health, habits]\nauthor: \"Personal\"\n---\n\n# Daily Journal & Health Tracking \u2014 September 24, 2026\n\n## Morning Routine & Mindset\nWoke up at 6:30 AM feeling refreshed. Completed 20 minutes of morning meditation and had a black coffee while reviewing daily priorities. Weather is crisp and clear today.\n\n## Work Highlights & Focus\nFocused on optimizing SQLite WAL transactions during the afternoon block. Managed to resolve a subtle lock contention issue in the batch seeder. Had a productive 1-on-1 with David discussing next quarter's roadmap.\n\n## Evening Health & Vitals Log\n- **Workout:** 45-minute evening jog in the park (5.2 km, average heart rate 142 bpm).\n- **Dinner:** Grilled salmon with asparagus and quinoa.\n- **Vitals Reading (9:30 PM):**\n  - **Blood Pressure:** 122/78 mmHg\n  - **Resting Heart Rate:** 64 bpm\n- **Medications / Supplements Taken:** 10mg Lisinopril, 2000 IU Vitamin D3, 500mg Magnesium Glycinate.\n\n## Gratitude & Reflection\nGrateful for quiet evening hours and uninterrupted writing time.\n",
+    "ground_truth_verified": true,
+    "verification_notes": "Found 122/78 mmHg and Lisinopril",
+    "tokens": {
+      "prompt_tokens": 3192,
+      "completion_tokens": 219,
+      "total_tokens": 3411
+    }
+  },
+  {
+    "scenario_id": 3,
+    "scenario_name": "Cross-Document Delay Penalty Terms",
+    "vault_total_notes": 1016,
+    "target_doc": "Client_Acme_Contract.md -> Billing_Terms.md",
+    "target_location": "Billing_Terms.md Section 3: 2.5% deduction per week of delay, capped at 10%",
+    "user_prompt": "What happens if Acme's Milestone 2 delivery is delayed? Are there weekly financial penalties and is there an overall cap?",
+    "tool_calls": [
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "Acme Milestone 2 delivery penalty"
+        }
+      },
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "Acme financial penalties weekly cap"
+        }
+      },
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "Acme"
+        }
+      },
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "milestone delivery terms"
+        }
+      },
+      {
+        "name": "sphene_read",
+        "args": {
+          "path": "Client_Acme_Contract.md"
+        }
+      },
+      {
+        "name": "sphene_read",
+        "args": {
+          "path": "Billing_Terms.md"
+        }
+      }
+    ],
+    "retrieved_data_sample": [
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "Acme Milestone 2 delivery penalty"
+        },
+        "snippet": "{\"results\": [], \"message\": \"No matches found for 'Acme Milestone 2 delivery penalty'\"}"
+      },
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "Acme financial penalties weekly cap"
+        },
+        "snippet": "{\"results\": [], \"message\": \"No matches found for 'Acme financial penalties weekly cap'\"}"
+      },
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "Acme"
+        },
+        "snippet": "{\"results\": [{\"path\": \"Client_Acme_Contract.md\", \"title\": \"Master Services Agreement \\u2014 Acme Corporation\", \"snippet\": \"# Master Services Agreement \\u2014 Acme Corporation\\n\\nThis agreement governs"
+      },
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "milestone delivery terms"
+        },
+        "snippet": "{\"results\": [{\"path\": \"Billing_Terms.md\", \"title\": \"Schedule B \\u2014 Standard Billing Terms & Penalties\", \"snippet\": \"...Billing Terms & Penalties\\n\\nThis schedule establishes the financial milestone"
+      },
+      {
+        "tool": "sphene_read",
+        "args": {
+          "path": "Client_Acme_Contract.md"
+        },
+        "snippet": "---\nid: contract_acme_2026\ntitle: \"Master Services Agreement \u2014 Acme Corporation\"\ndate: 2026-08-10\ntags: [contract, legal, client, acme]\nauthor: \"Legal Operations\"\nstatus: \"active\"\n---\n\n# Master Servic"
+      },
+      {
+        "tool": "sphene_read",
+        "args": {
+          "path": "Billing_Terms.md"
+        },
+        "snippet": "---\nid: billing_terms_schedule_b\ntitle: \"Schedule B \u2014 Standard Billing Terms & Penalties\"\ndate: 2026-08-10\ntags: [legal, billing, contract, terms]\nauthor: \"Finance & Legal\"\nstatus: \"active\"\n---\n\n# Sch"
+      }
+    ],
+    "final_answer": "Yes \u2014 based on the contract records, here's what happens if Acme's Milestone 2 delivery is delayed:\n\n## Milestone 2 Delay Penalties (per Schedule B)\n\nIf Milestone 2 (Cloud Sync & P2P WebRTC Data Mesh) is delayed **due to vendor performance without mutual written consent**, the following applies:\n\n| Term | Detail |\n|------|--------|\n| **Weekly Penalty** | \u2705 **Yes** \u2014 A **2.5% deduction** is applied against that milestone's fee for **each week** of delay |\n| **Overall Cap** | \u2705 **Yes** \u2014 The penalty is **capped at a maximum of 10%** of the total milestone value |\n| **Grace Period** | A **5 business-day cure period**",
+    "ground_truth_verified": true,
+    "verification_notes": "Found 2.5% weekly deduction and 10% maximum cap",
+    "tokens": {
+      "prompt_tokens": 4228,
+      "completion_tokens": 672,
+      "total_tokens": 4900
+    }
+  },
+  {
+    "scenario_id": 4,
+    "scenario_name": "DevOps Server Migration Spec",
+    "vault_total_notes": 1016,
+    "target_doc": "Server_Migration_Spec.md",
+    "target_location": "Section 3 ('Distributed Cache & Session Store'): Staging Port 6379, Eviction Policy volatile-lru",
+    "user_prompt": "What port and eviction policy did DevOps specify for Redis on staging?",
+    "tool_calls": [
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "Redis staging port eviction policy DevOps"
+        }
+      },
+      {
+        "name": "sphene_read",
+        "args": {
+          "path": "Server_Migration_Spec.md"
+        }
+      }
+    ],
+    "retrieved_data_sample": [
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "Redis staging port eviction policy DevOps"
+        },
+        "snippet": "{\"results\": [{\"path\": \"Server_Migration_Spec.md\", \"title\": \"Server Migration Specification (Staging to Production)\", \"snippet\": \"...Staging Port: 6379\\n- Production Port: 6380\\n- Memory Allocation: 16"
+      },
+      {
+        "tool": "sphene_read",
+        "args": {
+          "path": "Server_Migration_Spec.md"
+        },
+        "snippet": "# Server Migration Specification (Staging to Production)\n\n**Date:** 2026-09-20  \n**Owner:** DevOps Infrastructure Team  \n**Status:** Approved for execution  \n\n---\n\n## 1. Migration Overview\nThis docume"
+      }
+    ],
+    "final_answer": "Based on the Server Migration Specification (DevOps Infrastructure Team), here's what was specified for Redis:\n\n**Redis on Staging:**\n- **Port:** 6379\n- **Eviction Policy:** `volatile-lru`\n\nAdditional context from the spec:\n- **Redis version:** 7.2 Cluster\n- **Memory Allocation:** 16 GB max memory per node\n- **Persistence:** AOF enabled with everysec fsync\n\nNote that the document lists a separate **Production Port of 6380**, but the eviction policy (`volatile-lru`) is stated once as a general cluster setting rather than being split by environment.",
+    "ground_truth_verified": true,
+    "verification_notes": "Found Port 6379 and policy volatile-lru",
+    "tokens": {
+      "prompt_tokens": 2650,
+      "completion_tokens": 410,
+      "total_tokens": 3060
+    }
+  },
+  {
+    "scenario_id": 5,
+    "scenario_name": "Kyoto Trip Dining Reservation",
+    "vault_total_notes": 1016,
+    "target_doc": "Kyoto_Trip_Itinerary.md",
+    "target_location": "Section 'Day 1': 19:30 Dinner Reservation at Gion Duck Noodles, Code GION-8842",
+    "user_prompt": "What time is our dinner in Kyoto on day 1 and what's the reservation confirmation code?",
+    "tool_calls": [
+      {
+        "name": "sphene_search",
+        "args": {
+          "query": "Kyoto dinner reservation confirmation"
+        }
+      },
+      {
+        "name": "sphene_read",
+        "args": {
+          "path": "Kyoto_Trip_Itinerary.md"
+        }
+      }
+    ],
+    "retrieved_data_sample": [
+      {
+        "tool": "sphene_search",
+        "args": {
+          "query": "Kyoto dinner reservation confirmation"
+        },
+        "snippet": "{\"results\": [{\"path\": \"Kyoto_Trip_Itinerary.md\", \"title\": \"Autumn Kyoto Trip Itinerary (October 2026)\", \"snippet\": \"...wooden stage.\\n- 19:30 - Dinner Reservation at Gion Duck Noodles (Confirmation Co"
+      },
+      {
+        "tool": "sphene_read",
+        "args": {
+          "path": "Kyoto_Trip_Itinerary.md"
+        },
+        "snippet": "# Autumn Kyoto Trip Itinerary (October 2026)\n\n**Travelers:** Elena & Marcus  \n**Duration:** 4 Days / 3 Nights  \n**Base Hotel:** The Celestine Kyoto Gion  \n\n---\n\n## Day 1: Arrival & Historic Higashiyam"
+      }
+    ],
+    "final_answer": "Here are the details for your Day 1 dinner in Kyoto:\n\n- **Time:** 19:30 (7:30 PM)\n- **Restaurant:** Gion Duck Noodles\n- **Reservation Confirmation Code:** GION-8842\n- **Party size:** Table for 2\n\nThis is listed under Day 1's itinerary (Arrival & Historic Higashiyama). Safe travels!",
+    "ground_truth_verified": true,
+    "verification_notes": "Found 19:30 and confirmation code GION-8842",
+    "tokens": {
+      "prompt_tokens": 2759,
+      "completion_tokens": 284,
+      "total_tokens": 3043
+    }
+  }
+]

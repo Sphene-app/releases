@@ -1,0 +1,57 @@
+{
+  "workflow_4_1_extraction": {
+    "workflow": "4.1 Pinpoint Section Extraction",
+    "target_file": "Architecture_Roadmap.md",
+    "obsidian_whole_file": {
+      "lines": 1331,
+      "bytes": 211514,
+      "est_tokens": 52878,
+      "description": "Full document dump (read_file) into agent prompt window"
+    },
+    "sphene_pinpoint_section": {
+      "lines": 11,
+      "bytes": 448,
+      "est_tokens": 112,
+      "description": "Pinpoint heading subtree (sphene_find_in_doc)"
+    },
+    "reduction_pct": 99.79
+  },
+  "workflow_4_2_collision": {
+    "workflow": "4.2 Concurrent Mutation Collision",
+    "target_file": "Sprint_Tasks.md",
+    "obsidian_behavior": {
+      "mechanism": "Direct in-place disk overwrite (PUT /vault/file.md)",
+      "human_edit_lost": true,
+      "race_condition_risk": "HIGH: Concurrent edits silently destroy human modifications"
+    },
+    "sphene_behavior": {
+      "mechanism": "Append-only AST Differential Timeline with Human Veto",
+      "working_copy_overwritten": false,
+      "staging_guarantee": "ZERO-COLLISION: Staged patch requires explicit Human Veto approval"
+    }
+  },
+  "workflow_4_3_multihop": {
+    "workflow": "4.3 Multi-Hop Knowledge Synthesis",
+    "root_document": "Kernel_V2_Milestone.md",
+    "depth": 3,
+    "resolved_dependency_chain": [
+      {
+        "node": "Kernel_V2_Milestone.md",
+        "status": "active"
+      },
+      {
+        "node": "Consensus_Engine.md",
+        "status": "in-progress"
+      },
+      {
+        "node": "Leader_Election.md",
+        "status": "in-progress"
+      },
+      {
+        "node": "Network_Partition_Handler.md",
+        "status": "blocked"
+      }
+    ],
+    "final_blocker_identified": "Network_Partition_Handler.md (status: blocked)"
+  }
+}
