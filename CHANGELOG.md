@@ -1,3 +1,13 @@
+# Sphene v0.5.0 — Sovereign Knowledge Graph & Tag Taxonomy (2026-08-05)
+
+### Sovereign Knowledge Graph
+* **Force-Directed Knowledge Graph**: Interactive visual canvas representing vault document nodes and relationship vectors.
+* **Hierarchical Tag Taxonomy**: Deep nested tag indexing (`#research/systems/crypto`) with visual graph clustering.
+* **Orphan & Dangling Link Discovery**: Automated detection of dead references and unlinked notes across the entire vault.
+* **Neighborhood Filtering**: Dynamic graph depth filtering centered on the currently active note.
+
+---
+
 # Sphene v0.4.0 — Differential Timeline Engine & Micro-Snapshots (2026-07-22)
 
 ### Differential Timeline & Change Tracking
