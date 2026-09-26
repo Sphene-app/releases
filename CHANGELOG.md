@@ -1,3 +1,13 @@
+# Sphene v0.4.0 — Differential Timeline Engine & Micro-Snapshots (2026-07-22)
+
+### Differential Timeline & Change Tracking
+* **Micro-Snapshotting**: Automatic fine-grained change tracking on every note edit without git repository overhead.
+* **Visual Diff Inspector**: Unified split-view visual difference viewer showing added and removed lines.
+* **1-Click Rollback**: Instant restoration of previous document states from the local historical timeline.
+* **Tamper-Evident History**: Cryptographic change logs recording both human and agent edits.
+
+---
+
 # Sphene v0.3.0 — Dynamic Plugin Architecture & Extension Slots (2026-07-08)
 
 ### Dynamic Extensibility Engine
