@@ -1,3 +1,13 @@
+# Sphene v1.4.0 — Distraction-Free Read Mode & Sovereign PDF Export (2026-09-20)
+
+### Read Mode & Sovereign PDF Export
+* **True Distraction-Free Read Mode**: Collapsible chrome and navigation maximizing typographic focus.
+* **Sovereign PDF Engine**: Print and export documents to clean, publication-ready PDF preserving custom themes and math formulas.
+* **Document Outline HUD**: Interactive floating table-of-contents drawer for effortless navigation through lengthy notes.
+* **Reading Progress Bar**: Subtle visual reading indicator tracking document scroll position.
+
+---
+
 # Sphene v1.3.0 — Semantic Link Inference & Real-Time Vault Linter (2026-09-19)
 
 ### Semantic Link Inference & Linting
