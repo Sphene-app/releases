@@ -1,3 +1,13 @@
+# Sphene v0.9.0 — Vault Migration Toolkit & Media Transclusion (2026-09-12)
+
+### Migration & Media Engine
+* **1-Click Vault Migration**: Zero-data-loss importer for standard desktop Markdown vaults (.zip archives or local directories).
+* **Media Transclusion Engine**: Seamless inline rendering of `![[image.png]]`, audio clips, and embedded PDF pages.
+* **Visual Canvas Importer**: Automatic conversion of visual `.canvas` whiteboard files into connected Markdown index maps.
+* **Standalone Migration CLI**: Independent `migrate_vault.py` and `migrate_vault.sh` scripts for batch headless migrations.
+
+---
+
 # Sphene v0.8.0 — Interactive Checklists & Frontmatter Metadata (2026-09-05)
 
 ### Interactive Checklists & Frontmatter
