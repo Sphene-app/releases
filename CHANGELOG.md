@@ -1,3 +1,14 @@
+# Sphene Kernel v2.0.0 — Hardened Go Engine & Autonomous PWA Shell (2026-09-22)
+
+### Sphene Hardened Knowledge Kernel v2.0
+* **Go Kernel Core Architecture**: Complete engine rewrite in high-performance Go with zero runtime dependencies.
+* **Autonomous PWA Shell**: Fully autonomous local Progressive Web App running entirely offline from client storage.
+* **Embedded SQLite FTS5 Index**: Sub-millisecond full-text vault search and metadata indexing.
+* **Differential Timeline V2**: Native PR-style diff engine with accept/veto controls for agent proposed modifications.
+* **Zero-Trust Plugin Sandbox**: Isolated WebAssembly/WASI plugin runtime preventing unauthorized network access.
+
+---
+
 # Sphene v1.4.0 — Distraction-Free Read Mode & Sovereign PDF Export (2026-09-20)
 
 ### Read Mode & Sovereign PDF Export
