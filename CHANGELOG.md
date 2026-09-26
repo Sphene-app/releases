@@ -1,3 +1,13 @@
+# Sphene Kernel v2.1.0 — Verified Plugin Catalog & Enhanced Diff Engine (2026-09-23)
+
+### Verified Plugin Catalog & Enhanced Diff Engine
+* **Verified Plugin Catalog**: 1-click installation, verification badges, and dynamic capability registration.
+* **PR-Style Inline Diff**: Visual inline diff viewer for file revisions with explicit line-level accept/veto actions.
+* **Dynamic Partition Scoping**: Dynamic boundary previews in the editor ensuring strict workspace isolation.
+* **Smart Update Installer**: Auto-detects running daemon instances and seamlessly updates binaries without downtime.
+
+---
+
 # Sphene Kernel v2.0.0 — Hardened Go Engine & Autonomous PWA Shell (2026-09-22)
 
 ### Sphene Hardened Knowledge Kernel v2.0
