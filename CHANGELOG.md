@@ -1,3 +1,13 @@
+# Sphene v0.7.0 — Dynamic Crystals Theme Engine & Command Palette (2026-08-28)
+
+### Dynamic Crystals Theming
+* **Dynamic Crystals Theme Engine**: Instant zero-reload switching between curated color palettes (Obsidian Dark, Emerald Crystal, Nord, Amber, Pure White).
+* **CSS Custom Properties Tokens**: Full semantic theming architecture adhering strictly to high-contrast WCAG guidelines.
+* **Global Command Palette**: Instant keyboard navigation (`Ctrl+P` / `Cmd+P`) for accessing all commands, notes, and settings.
+* **Custom CSS Snippets**: Support for user-defined CSS overrides stored directly in the vault.
+
+---
+
 # Sphene v0.6.0 — Word Counter, Typewriter Scrolling & Typography Polish (2026-08-18)
 
 ### Core Utilities & Editor Ergonomics
