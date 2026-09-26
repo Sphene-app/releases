@@ -1,3 +1,15 @@
+# Sphene Kernel v2.2.25 — Cloudflare R2 Fallback, Circuit Breakers & Dynamic Physics Graph (2026-09-26)
+
+### High-Durability Cloudflare R2 Fallback & Dynamic Physics Graph
+* **Cloudflare R2 High-Durability Fallback**: Automatic failover to R2 zero-egress bucket storage if peer sync is unreachable.
+* **Circuit Breaker Policies**: Exponential backoff and automatic fault isolation protecting against upstream service degradation.
+* **Dynamic 60fps Physics Local Graph**: GPU-accelerated local knowledge graph with neon particle effects and spring physics.
+* **Touch Drag-and-Drop & Note Sharing**: Smooth mobile touch drag-and-drop file organization and inter-partition document sharing.
+* **Strict Competitor Brand Independence**: Enforced complete brand independence and architectural integrity across all documentation.
+* **Multi-Arch Docker Images**: Official Alpine-based multi-architecture container images bundled with embedded daemon.
+
+---
+
 # Sphene Kernel v2.2.24 — WebRTC P2P Mesh Sync & Partition Tabs (2026-09-25)
 
 ### WebRTC P2P Mesh Sync & Teams Collaboration
