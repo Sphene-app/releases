@@ -1,3 +1,13 @@
+# Sphene Kernel v2.2.0 — Sovereign Cloud Sync with Google Drive & Dropbox (2026-09-24)
+
+### Sovereign Cloud Sync & Zero-Knowledge Relay
+* **Zero-Knowledge Cloud Sync**: Direct client-side encrypted sync with Google Drive and Dropbox using Aegis AES-256-GCM.
+* **Cloud Relay Architecture**: Ephemeral zero-storage relay for OAuth token exchange without exposing private keys.
+* **Drawing Note Architecture**: Re-architected drawing notes with dedicated creation flow and multi-partition support.
+* **Touch & Gesture Trapping**: Full mobile gesture trapping preventing browser scroll while sketching.
+
+---
+
 # Sphene Kernel v2.1.0 — Verified Plugin Catalog & Enhanced Diff Engine (2026-09-23)
 
 ### Verified Plugin Catalog & Enhanced Diff Engine
