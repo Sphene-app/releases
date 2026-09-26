@@ -1,3 +1,13 @@
+# Sphene v1.3.0 — Semantic Link Inference & Real-Time Vault Linter (2026-09-19)
+
+### Semantic Link Inference & Linting
+* **Semantic Link Inference**: Intelligent recommendations for related notes based on content analysis and shared concept vectors.
+* **Vault Integrity Linter**: Continuous background checking for broken internal links, orphaned media, and empty headings.
+* **Dead Link Resolver**: 1-click automated refactoring to repair renamed document references across the entire vault.
+* **Heading Structure Validator**: Warnings for skipped heading levels to ensure accessible, clean document outlines.
+
+---
+
 # Sphene v1.2.0 — Sovereign Vector Canvas & Freehand Drawing Notes (2026-09-18)
 
 ### Sovereign Vector Canvas & Drawing
