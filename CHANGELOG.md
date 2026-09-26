@@ -1,3 +1,13 @@
+# Sphene v1.2.0 — Sovereign Vector Canvas & Freehand Drawing Notes (2026-09-18)
+
+### Sovereign Vector Canvas & Drawing
+* **Dedicated Drawing Notes**: Native `.drawing` note type with instant vector freehand sketching.
+* **Multi-Touch & Stylus Support**: Pressure-sensitive stroke rendering, color palettes, stroke width selector, and vector eraser.
+* **Pinch-to-Zoom & Pan HUD**: Smooth 60fps pan and zoom navigation across infinite canvas space.
+* **Vector SVG/PNG Export**: 1-click export and seamless embedding into standard Markdown documents.
+
+---
+
 # Sphene v1.1.0 — Native Mermaid Diagrams & KaTeX Math Typesetting (2026-09-17)
 
 ### Rich Technical Diagrams & Mathematics
