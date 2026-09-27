@@ -1,3 +1,16 @@
+# Sphene Kernel v2.2.26 — Zero-Bypass Machine Auth, POSIX 0600 Token Model & RFC 1918 Private LAN CORS (2026-09-27)
+
+### Zero-Bypass Machine Authentication & Sovereign Enclave Hardening
+* **Zero-Bypass Architecture**: Completely removed legacy static header bypass (`X-Sphene-Client: cli`) and hardcoded fallback master key (`sphene_local_agent_master_token_v2`). All API requests must be cryptographically authenticated.
+* **POSIX 0600 Machine Token Model**: High-entropy 256-bit API keys generated at daemon initialization and stored securely at `~/.sphene/api.key` and `<vault>/.sphene/api.key` with strict `0600` (read/write owner only) POSIX permissions.
+* **Developer Ergonomics (`sphene auth token`)**: Added `sphene auth token` (`--raw`, `--json`) CLI command for secure programmatic extraction of machine credentials across shell environments, systemd units, and AI agent workflows.
+* **RFC 1918 Private LAN CORS Protection**: Robust Origin validation supporting all private RFC 1918 subnets (`10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`), local mDNS (`*.local`), Same-Origin matching (`u.Host == reqHost`), and user-defined `SPHENE_ALLOWED_ORIGINS`, while strictly blocking untrusted external origins (`evil.com`).
+* **Hardware-Grade Private Partition Lockdown**: API keys and autonomous agents are structurally barred from accessing the `Private/` enclave (`ErrAgentAccessPrivate`), returning `403 Forbidden` with audit logging.
+* **Installer Security & Onboarding Guidance**: Enhanced 1-line installer with interactive security summary, detailing token paths, curl authentication snippets, MCP environment configurations, and remote access instructions.
+* **Unified Version Harmonization (v2.2.26)**: Comprehensive synchronization of kernel versioning across MCP server capabilities, Docker multi-arch images, Hermes agent integration specs, and client headers.
+
+---
+
 # Sphene Kernel v2.2.25 — Cloudflare R2 Fallback, Circuit Breakers & Dynamic Physics Graph (2026-09-26)
 
 ### High-Durability Cloudflare R2 Fallback & Dynamic Physics Graph
